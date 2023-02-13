@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 
-class ProductManager {
+export default class ProductManager {
     constructor (){
         this.products = []
         this.path = "./productos.txt"
@@ -65,9 +65,10 @@ class ProductManager {
     };
 }
 
-const productos = new ProductManager();
 
-// PRODUCTOS
+// const productos = new ProductManager();
+
+//  PRODUCTOS
 
 // productos.addProduct(
 //     'Sol',
@@ -108,7 +109,7 @@ const productos = new ProductManager();
 
 // productos.getProducts()
 
-productos.getProductsById(1)
+// productos.getProductsById(1)
 
 // productos.updateProduct({
 //     title: 'nuevo titulo',
